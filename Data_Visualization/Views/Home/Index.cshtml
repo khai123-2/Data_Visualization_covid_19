@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="container-fluid">
+    <div class="card-mt-4" style="background-color: rgba(54, 162, 235, 1);">
+        <div class="card-body">
+            <h3 class="text-center">COVID 19 TRACKER</h3>
+        </div>
+    </div>
+    <div class="card-mt-4">
+        <div class="card-body">
+            <h3 class="text-center">Global</h3>
+            <div class="row" id="rowInfor"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-8">
+            <div class="card-mt-5">
+                <div class="card-body">
+                    <h3>Top 10 Countries with highest number of COVID-19 infections</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card-mt-5">
+                <div class="card-body">
+                    <h3>Doughnut chart</h3>
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-mt-4 mb-5" style="max-width: 1300px;">
+        <div class="card-body">
+            <h3>All times</h3>
+            <canvas id="lineChart"></canvas>
+        </div>
+    </div>
+</div>
